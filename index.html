@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Väder app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="openSidebar()">&#9776;</div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="img/logo.png" style="height: 50px;" alt="Website Logo">
+            <h1>Väder Idag</h1>
+        </div>
+        <nav id="desktopNav" class="desktopNav">
+            <ul>
+                <li><a href="#" id="homeLink">Hemsida</a></li>
+                <li><a href="#" id="contactLink">Kontakta oss</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">&#10006;</div>
+        <a href="#" id="homeLinkMobile">hem</a>
+        <a href="#" id="contactLinkMobile">Kontakta oss</a>
+    </div>
+
+    <div class="container">
+        <div class="weather">
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Mörkt läge</span>
+            </div>
+            <div id="page-container">
+
+            </div>
+            
+        </div>
+
+    </div>
+    <footer>
+        <div class="social-icons">
+            <!-- Replace # with your actual social media links -->
+            <a href="#" class="social-icon"><img src="img/facebook-icon.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="img/linkedin-icon.png" alt="linkedin"></a>
+        </div>
+        <p>&copy; 2024 VaderIdag.se</p>
+    </footer>
+    <script src="color.mode.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>
