@@ -8,6 +8,7 @@ document.getElementById('weatherForm').addEventListener('submit', function (e) {
 function getWeatherData(city) {
     const apiKey = '31fb328bf7f84855ae3185427241602';
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+    console.log(apiUrl)
         // https://api.openweathermap.org/data/2.5/weather?q=malmö&appid=31fb328bf7f84855ae3185427241602&units=metric
         // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
     fetch(apiUrl)
